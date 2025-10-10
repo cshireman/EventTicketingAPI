@@ -1,6 +1,6 @@
 # EventTicketingAPI
 
-A demonstration REST API built with Vapor that provides mock event ticketing functionality. This API serves as a backend companion for the [EventTicketingSDK](https://github.com/YOUR_USERNAME/EventTicketingSDK) portfolio project.
+A demonstration REST API built with Vapor that provides mock event ticketing functionality. This API serves as a backend companion for the [EventTicketingSDK](https://github.com/cshireman/EventTicketingSDK) portfolio project.
 
 ## Overview
 
@@ -54,7 +54,7 @@ The API will be available at `http://localhost:8080`
 
 ## Related Projects
 
-- [EventTicketingSDK](https://github.com/YOUR_USERNAME/EventTicketingSDK) - iOS SDK that consumes this API
+- [EventTicketingSDK](https://github.com/cshireman/EventTicketingSDK) - iOS SDK that consumes this API
 
 ## Built With
 
