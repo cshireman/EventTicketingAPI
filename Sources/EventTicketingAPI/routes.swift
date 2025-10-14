@@ -43,7 +43,7 @@ func routes(_ app: Application) throws {
     // POST /api/v1/events/:id/reserve
     app.post("api", "v1", "events", ":id", "reserve") { req async throws -> TicketReservation in
         struct ReserveRequest: Content {
-            let ticketIDs: [String]
+            let ticketIds: [String]
         }
 
         guard let _ = req.parameters.get("id") else {
@@ -52,7 +52,7 @@ func routes(_ app: Application) throws {
 
         let request = try req.content.decode(ReserveRequest.self)
 
-        let tickets = MockData.tickets.filter { request.ticketIDs.contains($0.id) }
+        let tickets = MockData.tickets.filter { request.ticketIds.contains($0.id) }
 
         guard !tickets.isEmpty else {
             throw Abort(.notFound, reason: "Tickets not found")
